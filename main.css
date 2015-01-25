@@ -1,0 +1,79 @@
+
+
+#background {
+	margin-top: 20px;
+}
+
+#instructions, #xmas {
+	width: 600px;
+	height: 250px;
+	border: 2px solid red;
+}
+
+#xmas {
+	width: 600px;
+	height: 250px;
+	
+	border: 2px solid blue;
+}
+
+ #tracks {
+	width: 300px;
+	height: 300px;
+	border: 2px solid green;
+}
+
+.nav {
+	margin-top: 5px;
+	background-color: 
+}
+
+#table1 {
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.lights {
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#track {
+	width: 1150px;
+	height: 200px;
+	border: 2px solid blue;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+#dragster1 {
+	margin-top: 40px;
+	margin-left: 250px;
+	position: absolute;
+	
+}
+
+#preStageLine {
+	width: 2px;
+	height: 196px;
+	background-color: red;
+	position: absolute;
+	margin-left: 115px;
+}
+
+#StageLine {
+	
+	width: 2px;
+	height: 196px;
+	background-color: red;
+	position: absolute;
+	margin-left: 236px;	
+}
+
+
+
+

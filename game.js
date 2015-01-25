@@ -14,51 +14,72 @@ function moves() {
 }
 
 
+	// function preStageLights (){
+	// for (var i = 0; i < 8; i++) {
+	// 	var element = "bulb"+i;
+ //   		var bulb = window[element];
+
+ //   		var text = "img/start" + i + "-off.png";
+   		  		
+ //   		var start = "start" + i;
+
+ //   	 bulb = document.getElementById(start);
+ //   	 bulb.setAttribute("src",text);
+
+	// var bulb1 = document.getElementById("start1");	
+	// bulb1.setAttribute("src", "img/start1-off.png");
+	// var bulb2 = document.getElementById("start2");
+	// bulb2.setAttribute("src", "img/start2-on.png");	
+	// setTimeout(yellowLight1,1500);
+	
+	// }
+	// }
+
+
 
 	function preStageLights (){
-	var preStageLight = document.getElementById("preStageLight");	
-	preStageLight.setAttribute("src", "img/stage-off.png");
-	
-	var StageLight = document.getElementById("stageLight");
-	StageLight.setAttribute("src", "img/stage-on.png");	
+	var bulb1 = document.getElementById("start1");	
+	bulb1.setAttribute("src", "img/start1-off.png");
+	var bulb2 = document.getElementById("start2");
+	bulb2.setAttribute("src", "img/start2-on.png");	
 	setTimeout(yellowLight1,1500);
 	
 	}
 	
 	function yellowLight1(){
-	var bulb1 = document.getElementById("start1");
-	bulb1.setAttribute("src", "img/start1_on.png");
+	var bulb3 = document.getElementById("start3");
+	bulb3.setAttribute("src", "img/start3_on.png");
 	setTimeout(yellowLight2,1500);
 	}
 
 	function yellowLight2(){
-	var bulb2 = document.getElementById("start2");
-	bulb2.setAttribute("src", "img/start2_on.png");
-	var bulb1 = document.getElementById("start1");
-	bulb1.setAttribute("src", "img/start1_off.png");
+	var bulb4 = document.getElementById("start4");
+	bulb4.setAttribute("src", "img/start4_on.png");
+	var bulb3 = document.getElementById("start3");
+	bulb3.setAttribute("src", "img/start3_off.png");
 	setTimeout(yellowLight3,1500);
 	}	
 
 	function yellowLight3(){
-	var bulb3 = document.getElementById("start3");
-	bulb3.setAttribute("src", "img/start3_on.png");
-	var bulb2 = document.getElementById("start2");
-	bulb2.setAttribute("src", "img/start2_off.png");
+	var bulb5 = document.getElementById("start5");
+	bulb5.setAttribute("src", "img/start5_on.png");
+	var bulb4 = document.getElementById("start4");
+	bulb4.setAttribute("src", "img/start4_off.png");
 	setTimeout(greenLight,1500);
 	}	
 
 	function greenLight(){
-	var bulb4 = document.getElementById("green");
-	bulb4.setAttribute("src", "img/startGreen_on.png");
-	var bublb3 = document.getElementById("start3");
-	bublb3.setAttribute("src", "img/start3_off.png");
+	var bulb6 = document.getElementById("start6");
+	bulb6.setAttribute("src", "img/start6_on.png");
+	var bublb5 = document.getElementById("start5");
+	bublb5.setAttribute("src", "img/start5_off.png");
 	}	
 
 	function redLight () {
-		var bulb5 = document.getElementById("red");
-		bulb5.setAttribute("src", "img/foul_on.png");
-		var bublb4 = document.getElementById("green");
-		bublb4.setAttribute("src", "img/start3_off.png");
+		var bulb7 = document.getElementById("start7");
+		bulb7.setAttribute("src", "img/start7_on.png");
+		var bublb6 = document.getElementById("start6");
+		bublb6.setAttribute("src", "img/start6_off.png");
 	}
 
 
@@ -84,9 +105,9 @@ function advance () {
 	
 	
 	
-	if (this.$carrito.style.left === "146px") {
+	if (this.$carrito.style.left === "226px") {
 		 preStageLights();	
-	} else if (parseInt(this.$carrito.style.left) > 146) {
+	} else if (parseInt(this.$carrito.style.left) > 226) {
 		console.log(this.$carrito.style.left);
 		redLight();
 	}

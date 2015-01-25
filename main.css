@@ -1,27 +1,40 @@
 
 
 #background {
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 #instructions, #xmas {
-	width: 600px;
+	width: 800px;
 	height: 250px;
-	border: 2px solid red;
+	
 }
 
 #xmas {
-	width: 600px;
+	width: 800px;
 	height: 250px;
-	
-	border: 2px solid blue;
 }
 
- #tracks {
-	width: 300px;
-	height: 300px;
-	border: 2px solid green;
+#dash {
+	
+	height: 250px;	
+	position: absolute;
+	margin-top: -130px;
 }
+
+#tracks {
+	width: 500px;
+	height: 400px;
+	
+	background-color: rgb(44,44,46);
+	z-index: -1;
+}
+
+body {
+	background-color: rgb(222,222,222);
+}
+
+ 
 
 .nav {
 	margin-top: 5px;
@@ -43,16 +56,17 @@
 }
 
 #track {
-	width: 1150px;
+	width: 1280px;
 	height: 200px;
-	border: 2px solid blue;
 	margin-left: auto;
 	margin-right: auto; 
+	background-image: url("img/track.png"); 
+	margin-top: -100px;
 }
 
 #dragster1 {
-	margin-top: 40px;
-	margin-left: 250px;
+	margin-top: 140px;
+	margin-left: 50px;
 	position: absolute;
 	
 }
@@ -60,19 +74,21 @@
 #preStageLine {
 	width: 2px;
 	height: 196px;
-	background-color: red;
+	/*background-color: red;*/
 	position: absolute;
-	margin-left: 115px;
+	margin-left: 415px;
 }
 
 #StageLine {
 	
 	width: 2px;
-	height: 196px;
-	background-color: red;
+	height: 46px;
+	margin-top: 150px;
+	border: 1px dotted orange;
 	position: absolute;
-	margin-left: 236px;	
+	margin-left: 415px;	
 }
+
 
 
 

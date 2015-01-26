@@ -19,7 +19,7 @@
 	
 	height: 250px;	
 	position: absolute;
-	margin-top: -190px;
+	margin-top: -170px;
 }
 
 #tracks {
@@ -32,10 +32,11 @@
 
 #crowd {
 	margin-top: -60px;
+	width: 1275px;
 }
 
 #track {
-	width: 1280px;
+	width: 1275px;
 	height: 200px;
 	margin-left: auto;
 	margin-right: auto; 
@@ -62,17 +63,14 @@ body {
 #reset {
 	position: absolute;
 	margin-left: 160px;
-	margin-top: -200px;
+	margin-top: -160px;
 }
 
 .list-group {
 	width: 240px;
 	height: 192px;
-	margin-left: -690px; /*Aqui*/
-	
+	margin-left: -690px; 
 }
-
-
 
 .list-group-1 {
 	width: 408px;
@@ -82,7 +80,6 @@ body {
 }
 
 .lights {
-	
 	display: block;
 	position: relative;
 	margin-left: 305px;
@@ -90,12 +87,14 @@ body {
 	padding-top: 5px;
 }
 
+.list-group-item {
+	background-color: rgba(255,255,255,0.9);
+}
 
 #dragster1 {
-	margin-top: 0px;
+	margin-top: 10px;
 	margin-left: 50px;
 	position: absolute;
-	
 }
 
 #preStageLine {
@@ -116,8 +115,22 @@ body {
 	margin-left: 415px;	
 }
 
+#OffMessage {
+	position: absolute;
+	margin-left: 290px;
+	margin-top: -157px;
+	height: 30px;
+	padding-top: 10px;
+	width: 100px;
+}
 
-
-
-
+footer {
+	height: 40px;
+	background-color: #337AB7;
+	position: relative;
+	color: white;
+	text-align: center;
+	margin-top: 80px;
+	padding-top: 10px;
+}
 

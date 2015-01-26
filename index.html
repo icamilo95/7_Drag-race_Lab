@@ -33,10 +33,11 @@
 <div id="background">
 
 <table id="table1">
-  <!-- INSTRUCTIONS -->
+  
   <tr>     
     <td id="xmas">
       <img id="crowd" src="img/crowd.png" alt="">
+        <!-- INSTRUCTIONS -->
         <div class="list-group-1">
         <a href="#" class="list-group-item disabled">
           Instructions
@@ -44,7 +45,10 @@
         <a href="#" class="list-group-item">1. Turn the car on by pressing key "T"</a>
         <a href="#" class="list-group-item">2. Move the car into the staging area, before the cone.</a>
         <a href="#" class="list-group-item">3. Race the car down the racetrack when green light turn on</a>
-        <a href="#" id="OffMessage" class="list-group-item list-group-item-danger">The car is Off</a>
+        
+        <span id="OffMessage" class="label label-danger">Engine Off</span>
+
+      
       </div>
     </td>
     <!-- TIMER -->
@@ -55,12 +59,12 @@
           Timer (seconds)
         </a>
         <a id="watch-1" href="#" class="list-group-item">00:00:00</a>
-        <a href="#" class="list-group-item">00:00:00</a>
-        <a href="#" class="list-group-item">00:00:00</a>
-        <a href="#" class="list-group-item">00:00:00</a>
+        <a id="watch-2" href="#" class="list-group-item">00:00:00</a>
+        <a id="watch-3" href="#" class="list-group-item">00:00:00</a>
+        
         <!-- BUTTON -->
         
-        <button onclick="resetGame()" class="btn btn-success" id="reset" >Reset</button>
+        <button onclick="resetGame()" class="btn btn-warning" id="reset" >Reset</button>
         
 
   </tr>
@@ -103,5 +107,6 @@
 
 <script type="text/javascript" src="game.js"></script>
 </body>
+<footer>Copyright 2015 Camilo Ordonez. All rights reserved.</footer>
 
 </html>

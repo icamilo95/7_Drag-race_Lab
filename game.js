@@ -14,15 +14,12 @@ function moves() {
 	// function preStageLights (){
 	// for (var i = 0; i < 8; i++) {
 	// 	var element = "bulb"+i;
- //   		var bulb = window[element];
-
- //   		var text = "img/start" + i + "-off.png";
-   		  		
- //   		var start = "start" + i;
-
- //   	 bulb = document.getElementById(start);
- //   	 bulb.setAttribute("src",text);
-
+ //   	var bulb = window[element];
+ //   	var text = "img/start" + i + "-off.png";
+ //   	var start = "start" + i;
+ //   	bulb = document.getElementById(start);
+ //   	bulb.setAttribute("src",text);
+	
 	// var bulb1 = document.getElementById("start1");	
 	// bulb1.setAttribute("src", "img/start1-off.png");
 	// var bulb2 = document.getElementById("start2");
@@ -86,8 +83,8 @@ function dragster(){
 function turnon(){
 	window.addEventListener("keyup",function(event){
 		if (event.keyCode === 84) {
-			document.getElementById("OffMessage").innerHTML = ("The car is On");
-			document.getElementById("OffMessage").setAttribute("class","list-group-item list-group-item-success");	
+			document.getElementById("OffMessage").innerHTML = ("Engine On");
+			document.getElementById("OffMessage").setAttribute("class","label label-success");	
 			moves();
 		}
 	});	
@@ -122,8 +119,12 @@ function advance () {
 	document.getElementById("start6").setAttribute("src", "img/start6_off.png");	
 	document.getElementById("start7").setAttribute("src", "img/start7_off.png");
 	dragster();	
-	document.getElementById("OffMessage").innerHTML = ("The car is Off");
-	document.getElementById("OffMessage").setAttribute("class","list-group-item list-group-item-danger");	
+	document.getElementById("OffMessage").innerHTML = ("Engine Off");
+	document.getElementById("OffMessage").setAttribute("class","label label-danger");	
+	
+	document.getElementById("watch-2").innerHTML = "00:00:" + (finalTime2);
+	document.getElementById("watch-1").innerHTML = "00:00:00";
+	console.log(event.keyCode);
 	}
 
 

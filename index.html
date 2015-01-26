@@ -16,6 +16,7 @@
 
 
 <body>
+  <!-- NAV BAR -->
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <ul class="nav nav-pills">
@@ -29,15 +30,13 @@
     </div>
   </nav>
 
-
-
 <div id="background">
 
 <table id="table1">
-  
-
+  <!-- INSTRUCTIONS -->
   <tr>     
     <td id="xmas">
+      <img id="crowd" src="img/crowd.png" alt="">
         <div class="list-group-1">
         <a href="#" class="list-group-item disabled">
           Instructions
@@ -46,80 +45,61 @@
         <a href="#" class="list-group-item">2. Move the car into the staging area, before the cone.</a>
         <a href="#" class="list-group-item">3. Race the car down the racetrack when green light turn on</a>
         <a href="#" id="OffMessage" class="list-group-item list-group-item-danger">The car is Off</a>
-
-
       </div>
-
-
     </td>
-
-
+    <!-- TIMER -->
     <td id="instructions">
       
       <div class="list-group">
-        <a href="#" class="list-group-item disabled">
-          Timer (milliseconds)
+        <a href="#" class="list-group-item disabled ">
+          Timer (seconds)
         </a>
-        <a id="watch-1" href="#" class="list-group-item">00:00:00:00</a>
-        <a href="#" class="list-group-item">00:00:00:00</a>
-        <a href="#" class="list-group-item">00:00:00:00</a>
-        <a href="#" class="list-group-item">00:00:00:00</a>
-
-
-      </div>
-
-
+        <a id="watch-1" href="#" class="list-group-item">00:00:00</a>
+        <a href="#" class="list-group-item">00:00:00</a>
+        <a href="#" class="list-group-item">00:00:00</a>
+        <a href="#" class="list-group-item">00:00:00</a>
+        <!-- BUTTON -->
+        
+        <button onclick="resetGame()" class="btn btn-success" id="reset" >Reset</button>
+        
 
   </tr>
     
     <tr>
       <td id="tracks" colspan="2">
+        <!-- XMAS TREE -->
+
         <div id="track">
           <img id="start1" class="lights" src="img/start1-on.png" alt="start1" height="26" width="64">
           
           <img id="start2" class="lights" src="img/start2-off.png" alt="start2" height="26" width="64"> 
-      
-      <img id="start3" class="lights" src="img/start3_off.png" alt="start3" height="23" width="60"> 
-      <img id="start4" class="lights" src="img/start4_off.png" alt="start4" height="23" width="60"> 
-      <img id="start5" class="lights" src="img/start5_off.png" alt="start5" height="23" width="60"> 
-      
-      <img id="start6" class="lights" src="img/start6_off.png" alt="green" height="23" width="60"> 
-      <img id="start7" class="lights" src="img/start7_off.png" alt="start7" height="22" width="60"> 
-      
-      <img class="lights" src="img/base.png" alt="base" height="10" width="64" >
 
+          <img id="start3" class="lights" src="img/start3_off.png" alt="start3" height="23" width="60"> 
+          <img id="start4" class="lights" src="img/start4_off.png" alt="start4" height="23" width="60"> 
+          <img id="start5" class="lights" src="img/start5_off.png" alt="start5" height="23" width="60"> 
 
+          <img id="start6" class="lights" src="img/start6_off.png" alt="green" height="23" width="60"> 
+          <img id="start7" class="lights" src="img/start7_off.png" alt="start7" height="22" width="60"> 
 
-
-
-
-
-
-
+          <img class="lights" src="img/base.png" alt="base" height="10" width="64" >
+        
+        <!-- TRACK -->
 
           <div id="preStageLine"></div>
           <div id="StageLine"></div>
           <img id="dragster1" src="img/car.png" height="70" width="150" >
-          
-          
+                    
         </div>
-
       </td>
-
     </tr>
  
-
 </table>
+
+<!-- DASHBOARD -->
 
 <div id="dash">
   <img id="dashboard" src="img/dashboard.png" height="300" width="1280" >
 </div>
-
-
-
-    
-
-    
 
 <script type="text/javascript" src="game.js"></script>
 </body>

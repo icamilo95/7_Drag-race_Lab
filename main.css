@@ -30,13 +30,17 @@
 	z-index: -1;
 }
 
+#crowd {
+	margin-top: -60px;
+}
+
 #track {
 	width: 1280px;
 	height: 200px;
 	margin-left: auto;
 	margin-right: auto; 
 	background-image: url("img/track.png"); 
-	margin-top: -160px;
+	margin-top: -140px;
 }
 
 body {
@@ -55,18 +59,26 @@ body {
 	
 }
 
-.list-group {
-	width: 440px;
-	height: 192px;
-	margin-top: -10px;
-	margin-left: 40px;
+#reset {
+	position: absolute;
+	margin-left: 160px;
+	margin-top: -200px;
 }
 
-.list-group-1 {
-	width: 440px;
+.list-group {
+	width: 240px;
 	height: 192px;
-	margin-left: 160px;
-	margin-top: -30px;
+	margin-left: -690px; /*Aqui*/
+	
+}
+
+
+
+.list-group-1 {
+	width: 408px;
+	height: 192px;
+	margin-left: 60px;
+	margin-top: -230px;
 }
 
 .lights {

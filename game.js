@@ -10,7 +10,7 @@ function moves() {
 		}	
 	});
 }
-
+	// REFACTORING
 	// function preStageLights (){
 	// for (var i = 0; i < 8; i++) {
 	// 	var element = "bulb"+i;
@@ -29,7 +29,7 @@ function moves() {
 	// }
 	// }
 
-
+	// REFACTOR
 	function preStageLights (){
 	var bulb1 = document.getElementById("start1");	
 	bulb1.setAttribute("src", "img/start1-off.png");
@@ -110,6 +110,7 @@ function advance () {
 	}
 }
 
+	// REFACTOR
 	function resetGame(){
 	document.getElementById("start1").setAttribute("src", "img/start1-on.png");
 	document.getElementById("start2").setAttribute("src", "img/start2-off.png");	

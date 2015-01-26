@@ -6,7 +6,7 @@ function Game(){
 }
 
 function moves() {
-	window.addEventListener("keyup",function(event){
+	window.addEventListener("keydown",function(event){
 		if (event.keyCode === 39) {
 			advance();					
 		}	
@@ -71,15 +71,21 @@ function moves() {
 	function greenLight(){
 	var bulb6 = document.getElementById("start6");
 	bulb6.setAttribute("src", "img/start6_on.png");
+	
 	var bublb5 = document.getElementById("start5");
 	bublb5.setAttribute("src", "img/start5_off.png");
+	
+
+
 	}	
 
 	function redLight () {
 		var bulb7 = document.getElementById("start7");
 		bulb7.setAttribute("src", "img/start7_on.png");
+
 		var bublb6 = document.getElementById("start6");
 		bublb6.setAttribute("src", "img/start6_off.png");
+		setTimeout(alert("Foul!"),5000);
 	}
 
 
@@ -93,6 +99,8 @@ function dragster(){
 function turnon(){
 	window.addEventListener("keyup",function(event){
 		if (event.keyCode === 84) {
+			document.getElementById("OffMessage").innerHTML = ("The car is On");
+			document.getElementById("OffMessage").setAttribute("class","list-group-item list-group-item-success");	
 			moves();
 		}
 	});	
@@ -102,15 +110,31 @@ function turnon(){
 
 function advance () {
 	this.$carrito.style.left = parseInt(this.$carrito.style.left,10) + 10 + "px";
-	
-	
-	
+	var t1 = 0;
+	var t2 = 0;	
 	if (this.$carrito.style.left === "226px") {
 		 preStageLights();	
-	} else if (parseInt(this.$carrito.style.left) > 226) {
-		console.log(this.$carrito.style.left);
+	} else if (parseInt(this.$carrito.style.left) > 226 && document.getElementById("start6").getAttribute("src")=== "img/start6_off.png") {
 		redLight();
+	}else if (this.$carrito.style.left === "236px") {
+		 t1 = performance.now();
+		console.log("Inicia");
+	}else if (this.$carrito.style.left === "936px") {
+		 t2 = performance.now();
+		var finalTime = t2 - t1; 	
+		 
+		finalTime2 = (finalTime / 1000) % 60;
+		console.log(finalTime2);
+
+		var totalTime = document.getElementById("watch-1").innerHTML = "00:00:00:" + Math.round(finalTime2);
+
+		alert("Finished. Your time is:" + totalTime + " milliseconds");
 	}
+
+	
+
+
+
 }
 
 

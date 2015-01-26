@@ -5,21 +5,21 @@
 }
 
 #instructions, #xmas {
-	width: 800px;
-	height: 250px;
+	width: 900px;
+	
 	
 }
 
 #xmas {
 	width: 800px;
-	height: 250px;
+	height: 150px;
 }
 
 #dash {
 	
 	height: 250px;	
 	position: absolute;
-	margin-top: -130px;
+	margin-top: -190px;
 }
 
 #tracks {
@@ -30,11 +30,18 @@
 	z-index: -1;
 }
 
+#track {
+	width: 1280px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto; 
+	background-image: url("img/track.png"); 
+	margin-top: -160px;
+}
+
 body {
 	background-color: rgb(222,222,222);
 }
-
- 
 
 .nav {
 	margin-top: 5px;
@@ -48,24 +55,32 @@ body {
 	
 }
 
+.list-group {
+	width: 440px;
+	height: 192px;
+	margin-top: -10px;
+	margin-left: 40px;
+}
+
+.list-group-1 {
+	width: 440px;
+	height: 192px;
+	margin-left: 160px;
+	margin-top: -30px;
+}
+
 .lights {
 	
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
+	margin-left: 305px;
+	margin-top: -7px;
+	padding-top: 5px;
 }
 
-#track {
-	width: 1280px;
-	height: 200px;
-	margin-left: auto;
-	margin-right: auto; 
-	background-image: url("img/track.png"); 
-	margin-top: -100px;
-}
 
 #dragster1 {
-	margin-top: 140px;
+	margin-top: 0px;
 	margin-left: 50px;
 	position: absolute;
 	
@@ -82,12 +97,13 @@ body {
 #StageLine {
 	
 	width: 2px;
-	height: 46px;
-	margin-top: 150px;
+	height: 18px;
+	margin-top: 0px;
 	border: 1px dotted orange;
 	position: absolute;
 	margin-left: 415px;	
 }
+
 
 
 
